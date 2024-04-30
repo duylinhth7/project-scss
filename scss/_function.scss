@@ -1,0 +1,38 @@
+$color-primary: #F9569A;
+$color-primary-2: #8F5FE4;
+$color-text-home: #fff;
+$color-line: #ddd;
+$color-pricing: #F2F2FE;
+
+// BUTTON
+
+// END BUTTON
+
+@mixin display-flex(){
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-wrap(){
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@mixin boder-radius($value){
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+    border-radius: $value;
+}
+.button {
+    display: inline-block;
+    background-color: $color-primary;
+    padding: 12px 18px;
+    @include boder-radius(50px);
+    font-size: 13px;
+    color: $color-text-home;
+    margin-top: 20px;
+}
