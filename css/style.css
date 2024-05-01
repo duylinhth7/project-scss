@@ -155,6 +155,11 @@
   margin-top: 20px;
 }
 
+@media (max-width: 1199.98px) {
+  .featured {
+    margin-top: 0px;
+  }
+}
 .discussion {
   text-align: center;
   margin-top: 100px;
